@@ -1,12 +1,13 @@
 # Retinal Eye Disease Prediction 👁️🩺
 
+
+
 ## ✨ Executive Summary
 
-A deep learning project that classifies retinal OCT images into four categories — **CNV, DME, Drusen, and Normal** — using a **custom-built Convolutional Neural Network (CNN)** and **Keras preprocessing**.
-The model achieves a strong accuracy of **94.95%** and is designed for **reproducibility, interpretability, and potential deployment** in clinical screening or telemedicine workflows.
+A production-oriented deep learning project that classifies retinal OCT images into four categories — **CNV, DME, Drusen, and Normal** — using a lightweight transfer-learning backbone (**MobileNet**) and **Keras preprocessing**.
+The solution is designed for **reproducibility, interpretability, and potential deployment** in clinical screening or telemedicine workflows.
 
-![Eye Disease Prediction](News%20Research%20Tool.png)
-
+![App Screenshot](App.png)
 ---
 
 ## 📌 Overview
@@ -18,13 +19,13 @@ This project is a **deep learning–based retinal disease classification system*
 * 🟡 **Drusen**
 * ✅ **Normal (healthy retina)**
 
-The system leverages a **custom CNN model** and uses **Keras preprocessing utilities** to build a robust training pipeline.
+The system leverages **MobileNet** as a lightweight yet effective CNN architecture and uses **Keras preprocessing utilities** to build a robust training pipeline.
 
 ---
 
 ## 🚀 Key Highlights
 
-* **Model Architecture:** Custom Convolutional Neural Network (CNN)
+* **Model Architecture:** MobileNet (ImageNet pretrained, fine-tuned for this task)
 * **Preprocessing:** Image resizing, normalization, and augmentation using **Keras preprocessing utilities**
 * **Classification:** Four categories — CNV, DME, Drusen, Normal
 * **Evaluation:** Accuracy, Precision, Recall, F1-score, Confusion Matrix
@@ -35,7 +36,7 @@ The system leverages a **custom CNN model** and uses **Keras preprocessing utili
 ## 🛠️ Technologies Used
 
 * 🐍 **Python**
-* 🤖 **TensorFlow / Keras (CNN, Preprocessing Layers)**
+* 🤖 **TensorFlow / Keras (MobileNet, Preprocessing Layers)**
 * 📊 **NumPy, Pandas**
 * 🖼️ **OpenCV**
 * 📉 **Matplotlib, Seaborn**
@@ -74,30 +75,31 @@ pip install -r requirements.txt
 jupyter notebook Training_model.ipynb
 ```
 
-4. Run the notebook cells to preprocess data, train the CNN model, and evaluate results.
+4. Run the notebook cells to preprocess data, train MobileNet, and evaluate results.
 
 ---
 
 ## 📈 Results
 
-* Model trained using CNN achieved **94.95% accuracy** on the test dataset.
+* Model trained using **MobileNet** achieved **X% accuracy** on the test dataset.
 * Performance validated with confusion matrix and classification report.
 * Training progress visualized through accuracy/loss curves.
+  *(Replace X% with your actual accuracy score.)*
 
 ---
 
 ## 🧑‍⚕️ Applications
 
-* Automated screening tool for retinal diseases.
-* AI-assisted decision support for ophthalmologists.
-* Potential use in telemedicine and low-resource healthcare settings.
+* Automated **screening tool** for retinal diseases.
+* AI-assisted **decision support** for ophthalmologists.
+* Potential use in **telemedicine** and **low-resource healthcare** settings.
 
 ---
 
 ## 🔮 Future Scope
 
-* 🌐 Deploy as a web or mobile app for real-time diagnosis.
-* 🔄 Explore advanced CNN architectures (ResNet, EfficientNet).
+* 🌐 Deploy as a **web or mobile app** for real-time diagnosis.
+* 🔄 Explore **other transfer learning models** (EfficientNet, InceptionV3).
 * 📈 Improve generalization with larger datasets.
 * 🔍 Add explainability tools (Grad-CAM, saliency maps).
 
@@ -105,8 +107,8 @@ jupyter notebook Training_model.ipynb
 
 ## 👨‍💻 Author
 
-* Name: Tushar Gehlot
-* Email: [tushargehlot2489@gmail.com](mailto:tushargehlot2489@gmail.com)
-* GitHub: tushargehlot2489
+* **Name:** Tushar Gehlot
+* **Email:** [tushargehlot2489@gmail.com](mailto:tushargehlot2489@gmail.com)
+* **GitHub:** [tushargehlot2489](https://github.com/tushargehlot2489)
 
-💡 Open to discussions, collaborations, and improvements.
+💡 *Open to discussions, collaborations, and improvements.*
