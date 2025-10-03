@@ -5,6 +5,8 @@
 A deep learning project that classifies retinal OCT images into four categories — **CNV, DME, Drusen, and Normal** — using a **custom-built Convolutional Neural Network (CNN)** and **Keras preprocessing**.
 The model achieves a strong accuracy of **94.95%** and is designed for **reproducibility, interpretability, and potential deployment** in clinical screening or telemedicine workflows.
 
+![Eye Disease Prediction](News%20Research%20Tool.png)
+
 ---
 
 ## 📌 Overview
